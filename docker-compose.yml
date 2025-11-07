@@ -32,6 +32,19 @@ services:
       - ./employee/.env
     restart: always
 
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    depends_on:
+      - employee-service
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+    restart: always
+
 networks:
   my_network:
     driver: bridge
