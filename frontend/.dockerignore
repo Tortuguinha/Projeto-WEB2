@@ -1,0 +1,37 @@
+# Node modules (serão instalados dentro do container)
+node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite cache
+.vite
+
+# Diretórios de build locais
+dist
+build
+
+# Configurações do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de controle de versão
+.git
+.gitignore
+
+# Dockerfile e docker-compose (se não forem usados no build)
+docker-compose.yml
+Dockerfile*
+
+# Testes e documentação (se não forem necessários na imagem)
+__tests__/
+docs/
+*.test.*
+*.spec.*
+
+# Ambiente local
+.env
+.env.local
+.env.*.local
